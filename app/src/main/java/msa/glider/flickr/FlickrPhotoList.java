@@ -29,11 +29,12 @@ import msa.glider.flickr.api.Photo;
 
 import static com.bumptech.glide.load.resource.drawable.DrawableTransitionOptions.withCrossFade;
 
+
 /**
  * A fragment that shows cropped image thumbnails half the width of the screen in a scrolling list.
  */
 public class FlickrPhotoList extends Fragment implements PhotoViewer {
-    private static final int PRELOAD_AHEAD_ITEMS = 5;
+    private static final int PRELOAD_AHEAD_ITEMS = 10;
     private static final String STATE_POSITION_INDEX = "state_position_index";
     private static final String STATE_POSITION_OFFSET = "state_position_offset";
     private FlickrPhotoListAdapter adapter;
@@ -191,3 +192,4 @@ public class FlickrPhotoList extends Fragment implements PhotoViewer {
         }
     }
 }
+
